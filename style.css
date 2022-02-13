@@ -1,5 +1,5 @@
 .video-container {
-background:#000;
+background:#b91d1d;
 width:80%;
 color:#fff;
 }
@@ -21,24 +21,24 @@ height:30px;
 width:30px;
 }
 .video-hud__action_play {
-background:#ccc;
+background: url("stop.png");
 border-radius:0 100px 100px 0;
 }
 .video-hud__action_pause {
-background:#c00;
+background: url("play.png");
 }
 .video-hud__mute {
 width:30px;
 border-radius:100px 100px 100px 100px;
 }
 .video-hud__mute_true {
-background:#c00;
+background: url("mute.png");
 }
 .video-hud__mute_false {
-background:#ccc;
+background: url("unmute.png") 30px;
 }
 .video-hud__download {
-background:#ccc;
+background: url("download.png");
 width:30px;
 border-radius:0 0 100px 100px;
 }
