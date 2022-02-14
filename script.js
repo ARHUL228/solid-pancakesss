@@ -79,3 +79,9 @@ muteButton.addEventListener('click',videoMute);
 volumeScale.addEventListener('change',videoChangeVolume);
 //Работа со скоростью
 speedSelect.addEventListener('change',videoChangeSpeed);
+document.getElementById("videoUpload")
+.onchange = function(event) {
+  let file = event.target.files[0];
+  let blobURL = URL.createObjectURL(file);
+  document.querySelector("video").src = blobURL;
+}

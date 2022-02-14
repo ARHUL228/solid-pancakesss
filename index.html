@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <title>тестовая страничка</title>
     <link rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
   </head>
   <body>
     <div class='video-container'>
+      <input type='file'  id='videoUpload' />
     <video src="video.mp4"  class='video-player' id='video-player' preload='metadata'></video>
     <div class='video-hud'>
     <div class='video-hud__element video-hud__action video-hud__action_play' id='video-hud__action'></div>
@@ -27,6 +29,8 @@
     </select>
     <a class='video-hud__element video-hud__download' title='Скачать' href='video.mp4' download></a>
     </div>
+    <div <form enctype="multipart/form-data" method="post">
+  </form>
     </div>
    <script src="script.js"></script>
   </body>
