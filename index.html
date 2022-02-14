@@ -2,36 +2,117 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>тестовая страничка</title>
     <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="jquery.js"></script>
   </head>
   <body>
-    <div class='video-container'>
-      <input type='file'  id='videoUpload' />
-    <video src="video.mp4"  class='video-player' id='video-player' preload='metadata'></video>
-    <div class='video-hud'>
-    <div class='video-hud__element video-hud__action video-hud__action_play' id='video-hud__action'></div>
-    <div class='video-hud__element video-hud__curr-time' id='video-hud__curr-time'>00:00</div>
-    <progress value='0' max='100' class='video-hud__element video-hud__progress-bar' id='video-hud__progress-bar'></progress>
-    <div class='video-hud__element video-hud__duration' id='video-hud__duration'>00:00</div>
-    <div class='video-hud__element video-hud__mute video-hud__mute_false' id='video-hud__mute'></div>
-    <input type='range' value='100' max='100' title='Громкость' class='video-hud__element video-hud__volume' id='video-hud__volume'>
-    <select title='Скорость' class='video-hud__element video-hud__speed' id='video-hud__speed'>
-    <option value='25'>x0.25</option>
-    <option value='50'>x0.50</option>
-    <option value='75'>x0.75</option>
-    <option value='100' selected>x1.00</option>
-    <option value='125'>x1.25</option>
-    <option value='150'>x1.50</option>
-    <option value='175'>x1.75</option>
-    <option value='200'>x2.00</option>
-    </select>
-    <a class='video-hud__element video-hud__download' title='Скачать' href='video.mp4' download></a>
-    </div>
-    <div <form enctype="multipart/form-data" method="post">
+
   </form>
     </div>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>Omg GOD</span>
+    </div>
+    <div id="about">
+      <a href="#" title="Возможности" onclick="slowScroll('#main')">Возможности</a>
+      <a href="#" onclick="slowScroll('#overview')" title="Преимущества">Преимущества</a>
+      <a href="#" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
+      <a href="#" onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
+    </div>
+  </header>
+
+  <div id="top">
+    <h1>Программирование</h1>
+    <h3>как способ жизни!</h3>
+  </div>
+
+  <div id="main">
+    <div class="intro">
+      <h2>Наши услуги помогут вам!</h2>
+      <span>Большой выбор всего, что может вам пригодиться</span>
+    </div>
+    <div class="text">
+      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos impedit, ut vero commodi voluptate? Ipsam reiciendis, necessitatibus incidunt ipsa quis sapiente excepturi, optio iusto voluptatibus dolorem officia quidem, numquam eaque minus, autem praesentium rem architecto dolores. Ipsa unde id velit optio magni enim! Illum obcaecati, dolorem distinctio nemo, ipsum iure.</span>
+    </div>
+  </div>
+
+  <div id="overview">
+    <h2>Преимущества</h2>
+    <h4>с нами все проще</h4>
+
+    <div class="img">
+      <div class='video-container'>
+        <input type='file'  id='videoUpload' />
+      <video src="video.mp4"  class='video-player' id='video-player' preload='metadata'></video>
+      <div class='video-hud'>
+      <div class='video-hud__element video-hud__action video-hud__action_play' id='video-hud__action'></div>
+      <div class='video-hud__element video-hud__curr-time' id='video-hud__curr-time'>00:00</div>
+      <progress value='0' max='100' class='video-hud__element video-hud__progress-bar' id='video-hud__progress-bar'></progress>
+      <div class='video-hud__element video-hud__duration' id='video-hud__duration'>00:00</div>
+      <div class='video-hud__element video-hud__mute video-hud__mute_false' id='video-hud__mute'></div>
+      <input type='range' value='100' max='100' title='Громкость' class='video-hud__element video-hud__volume' id='video-hud__volume'>
+      <select title='Скорость' class='video-hud__element video-hud__speed' id='video-hud__speed'>
+      <option value='25'>x0.25</option>
+      <option value='50'>x0.50</option>
+      <option value='75'>x0.75</option>
+      <option value='100' selected>x1.00</option>
+      <option value='125'>x1.25</option>
+      <option value='150'>x1.50</option>
+      <option value='175'>x1.75</option>
+      <option value='200'>x2.00</option>
+      </select>
+      <a class='video-hud__element video-hud__download' title='Скачать' href="video.mp4" download></a>
+      </div>
+      <div <form enctype="multipart/form-data" method="post">
+      <span>Omg God </span>
+    </div>
+    </div>
+  </div>
+
+  <div id="contacts">
+    <center><h5>Обратная связь</h5></center>
+    <form id="form_input">
+      <label for="name">Имя <span>*</span></label><br>
+      <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+      <label for="email">Ваша почта <span>*</span></label><br>
+			<input type="email" placeholder="Введите email" name="email" id="email"><br>
+			<label for="message">Сообщение <span>*</span></label><br>
+			<textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
+			<div id="mess_send" class="btn">Отправить</div>
+    </form>
+  </div>
+
+  <div id="faq">
+    <div>
+      <span class="title">Оплата</span><br>
+      <span class="heading">Как будет проходит оплата?</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+      <span class="heading">Как будет проходит оплата?</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+      <span class="heading">Как будет проходит оплата?</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+    </div>
+    <div>
+      <span class="title">Информация</span><br>
+      <span class="heading">Что входит в услуги сервиса</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+      <span class="heading">Что входит в услуги сервиса</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+      <span class="heading">Что входит в услуги сервиса</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+    </div>
+    <div>
+      <span class="title">Гарантии</span><br>
+      <span class="heading">Какие гарантии есть</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+      <span class="heading">Какие гарантии есть</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+      <span class="heading">Какие гарантии есть</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+    </div>
+  </div>
    <script src="script.js"></script>
   </body>
 </html>
