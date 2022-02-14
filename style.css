@@ -63,7 +63,6 @@ body {
   font-family: Trebuchet MS, Helvetica;
 }
 
-/* Шапка сайта */
 
 header {
   width: 100%;
@@ -129,7 +128,6 @@ header #logo span {
   margin-right: 7%;
 }
 
-/* Стили для фиксированной шапки */
 
 .fixed {
   z-index: 5000;
@@ -144,11 +142,10 @@ header.fixed #logo {
 .fixed #about a {color: #343434}
 .fixed #about a:hover {color: #7c7c7c}
 
-/* Главный блок на сайте */
 
 #top {
   width: 100%;
-  background-image: url(https://www.lovelymockups.com/wp-content/uploads/2017/01/mackbook-on-table.jpg);
+  background:url(mackbook-on-table.jpg) ;
   background-blend-mode: multiply;
   background-color: #2e3a44;
   background-size: cover;
